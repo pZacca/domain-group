@@ -99,7 +99,18 @@ function getColorForDomain(domain) {
 
 // Get group name for domain
 function getGroupNameForDomain(domain) {
-  return settings.customDomainNames[domain] || domain;
+  // Use custom name if available
+  if (settings.customDomainNames[domain]) {
+    return settings.customDomainNames[domain];
+  }
+  
+  // Remove TLD (last segment) from domain name
+  const parts = domain.split('.');
+  if (parts.length > 1) {
+    parts.pop(); // Remove the last segment (TLD)
+    return parts.join('.');
+  }
+  return domain;
 }
 
 // Handle newly created tabs
