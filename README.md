@@ -23,7 +23,7 @@ A Chrome extension that automatically groups browser tabs by their domain.
 
 ### From Chrome Web Store
 
-*Coming soon*
+*Coming soon*.
 
 ## Usage
 
@@ -51,13 +51,13 @@ The easiest way to convert icons is to use the included Python script:
 1. Make sure you have Python 3.6+ installed
 2. Install the required packages:
 
-   ```
+   ```bash
    pip install cairosvg pillow
    ```
 
 3. Run the conversion script:
 
-   ```
+   ```bash
    python convert_icons.py
    ```
 
