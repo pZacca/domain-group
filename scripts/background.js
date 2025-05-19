@@ -2,7 +2,7 @@
 
 // Default settings
 const DEFAULT_SETTINGS = {
-  groupSubdomains: false,
+  groupSubdomains: true,
   autoGroupNewTabs: true,
   domainColors: {},
   customDomainNames: {}
